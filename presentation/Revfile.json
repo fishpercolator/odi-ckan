@@ -1,0 +1,17 @@
+{
+    "title": "Interacting with Open Data from Ruby",
+    "description": "",
+    "author": "",
+    "options": {
+        "theme": "black",
+        "transition": "slide",
+        "controls": true,
+        "progress": true,
+        "history": true,
+        "center": true
+    },
+    "plugins": [
+        "markdown",
+        "notes"
+    ]
+}
