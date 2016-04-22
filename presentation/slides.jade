@@ -1,18 +1,84 @@
 //- For Jade language reference, see <http://jade-lang.com/reference/>
-section
+section.titleslide
   h1= title
+  h2= description
+  img.logo(src='img/logo.png')
   h2= author
+  aside.notes.
+    I'm going to talk about accessing open data directly from code.
 section
   h2 Who am I?
+  img.quadrant(src='img/headshot.jpg')
+  img.quadrant(src='img/leeds_tube.png')
+  img.quadrant(src='img/usdl.png')
+  img.quadrant(src='img/lbq.png')
+  aside.notes.
+    Rich Daley - run a software dev consultancy called Fish Percolator.
+    
+    I'm part of the Urban Sustainable Dev Lab that works with LCC on tackling
+    issues such as Age-Friendly Smart City.
+    
+    You may also recognise me as the creator of the Leeds Tube Map, or one of
+    the two authors of Leeds Beer Quest (describe).
 section
   h2 Leeds Data Mill
+  img(src='img/ldm.png')
+  aside.notes.
+    Leeds Data Mill is brilliant. There's so much local gov data out there,
+    and even better most of it is in CSV format.
+    
+    But this website is designed for humans, not machines, and the search/filter
+    capability only gets you so far.
 section
   h2 CKAN
-section
+  img(src='img/ckan.png')
+  aside.notes.
+    I did some digging, and it turns out Leeds Data Mill is actually an
+    implementation of CKAN (Comprehensive Knowledge Archive Network), a well
+    defined standard for distributing data in packages.
+section.data
   h2 Getting to the data
+  img.fragment(src='img/ckan-gem.png')
+  img.fragment(src='img/pr.png')
+  aside.notes.
+    How do I get to this data from code?
+    
+    As I'm a Ruby developer, the first thing I do is go to Rubygems and see if
+    someone has already solved this problem for me.
+    
+    Aha! This gem looks promising. Although, it is at version 0.0.3 and hasn't
+    been updated in 5 years.
+    
+    But this is the beauty of open source software. When something's broken, you
+    can just fix it! Here's my fork and pull request to add the functions I needed.
+    
+    (Rubygems allows you to install forked gems into your projects, so people
+    don't even have to wait for the owner to wake up.)
 section
   h2 Why code?
+  img.transparent(src='img/ruby.png')
+  aside.notes.
+    Area of comfort (Excel is scary) / Unlimited possibilities / Repeatable
+    (e.g. with scheduled jobs)
 section
   h2 Demo!
+  iframe(src='http://localhost:9292/')
+  aside.notes.
+    Metadata stuff first. Then LBQ stuff. Then try combining datasets.
 section
-  h2 Fin
+  h2 GSOH: Great Sense of Home
+  a(href='https://gsoh.herokuapp.com', target='_blank')
+    img(src='img/gsoh.png')
+  aside.notes.
+    Jump out and show how this works and what LDM data source are being
+    pulled in.
+section.end
+  h1 The end
+  img.logo(src='img/logo-horiz.png')
+  ul
+    li @fishpercolator
+    li @pedantic_git
+    li @leedsbeerquest
+    li https://fishpercolator.co.uk/
+    li http://leedsbeer.info/
+    

@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title ODI presentation
+    %script{src: "https://code.jquery.com/jquery-2.2.3.min.js", integrity: "sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=", crossorigin: "anonymous"}
+    :css
+      #rack-webconsole {
+        height: 100% !important;
+        width: 100% !important;
+      }
+      span.prompt {
+        position: relative !important;
+        top: -0.3em !important;
+      }
+  %body
+    = yield

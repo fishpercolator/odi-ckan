@@ -1,14 +1,14 @@
 {
-    "title": "Interacting with Open Data from Ruby",
-    "description": "",
-    "author": "",
+    "title": "Best of Both Worlds",
+    "description": "Open Data + Ruby",
+    "author": "Rich Daley",
     "options": {
-        "theme": "black",
-        "transition": "slide",
-        "controls": true,
+        "theme": "solarized",
+        "transition": "fade",
+        "controls": false,
         "progress": true,
         "history": true,
-        "center": true
+        "center": true,
     },
     "plugins": [
         "markdown",
