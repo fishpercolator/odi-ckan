@@ -8,6 +8,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     bond (0.4.3)
+    breasal (0.0.1)
     haml (4.0.7)
       tilt
     map_h (0.1.0)
@@ -34,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  breasal
   ckan!
   haml
   map_h

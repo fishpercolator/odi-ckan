@@ -2,6 +2,7 @@ require 'sinatra'
 require 'rack/webconsole'
 require 'ckan'
 require 'map_h'
+require 'breasal'
 
 class OdiApp < Sinatra::Application
   use Rack::Webconsole
